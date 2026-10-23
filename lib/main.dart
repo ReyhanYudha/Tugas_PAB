@@ -48,6 +48,44 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Jalan di Barcelona',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 12),
+                  Row(
+                    children: [
+                      Icon(Icons.place, color: Colors.red),
+                      SizedBox(width: 8),
+                      Expanded(
+                        child: Text('Lokasi: Barcelona, Spanyol'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.calendar_month,
+                        color: Colors.blue,
+                      ),
+                      SizedBox(width: 8),
+                      Text('Publikasi: 13 Agustus 2013'),
+                    ],
+                  )
+                ]
+              )
+            ),
           ]
         )
       )
