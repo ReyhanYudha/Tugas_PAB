@@ -33,6 +33,24 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              margin: const EdgeInsets.all(16),
+              child: AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Image.network(
+                  'https://picsum.photos/id/88/300/200',
+                  width: 300,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ]
+        )
+      )
     );
   }
 }
