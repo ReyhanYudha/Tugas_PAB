@@ -82,7 +82,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(width: 8),
                       Text('Publikasi: 13 Agustus 2013'),
                     ],
-                  )
+                  ),
+                  SizedBox(height: 12),
+                  Text(
+                    'Sebuah persimpangan jalan di Barcelona, Spanyol. '
+                    'Foto ini menampilkan berbagai kendaraan yang '
+                    'bergerak dalam arah yang berbeda, menciptakan '
+                    'pemandangan yang sibuk dan energik.',
+                    style: TextStyle(fontSize: 16),
+                    textAlign: TextAlign.justify,
+                  ),
+                  SizedBox(height: 16),
+
                 ]
               )
             ),
